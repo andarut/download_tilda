@@ -4,6 +4,8 @@ Script to download any website built with https://tilda.cc/
 
 # Demo
 
+You need `python3.11` installed on your machine
+
 ```bash
 ./demo.sh
 ```
