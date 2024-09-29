@@ -10,6 +10,8 @@ You need `python3.11` installed on your machine
 ./demo.sh
 ```
 
+Once it's done checkout `index.html`
+
 It'll download example website built with tilda.
 
 Website built with tilda:
