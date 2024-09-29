@@ -93,6 +93,10 @@ class Engine:
 		self.driver = webdriver.Chrome(options=self.options)
 		self.driver.get(self.url)
 		time.sleep(self.STARTUP_TIMEOUT)
+		body = self.driver.find_element(By.TAG_NAME, "body")
+		for _ in range(100):
+			body.send_keys(Keys.ARROW_DOWN)
+		time.sleep(self.STARTUP_TIMEOUT)
 
 	def find_element(self, name: str, xpath: str) -> Element:
 		element = self.Element(name, xpath)
