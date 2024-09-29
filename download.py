@@ -135,7 +135,7 @@ class Engine:
 		with open(path, "w+") as f:
 			f.write(data)
 
-		os.system(f"open {path}")
+		# os.system(f"open {path}")
 
 
 	def find_elements(self, name: str, class_name: str) -> [Element]:
